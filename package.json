@@ -1,0 +1,20 @@
+{
+  "name": "stats-handbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "check": "node docs/.vitepress/theme/lib/check.mjs"
+  },
+  "devDependencies": {
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@vueuse/core": "^12.8.2",
+    "jstat": "^1.9.6"
+  }
+}
