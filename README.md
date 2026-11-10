@@ -25,6 +25,27 @@ npm run build
 - `npm run preview`：预览构建结果；
 - `npm run check`：运行计算库的断言自检。
 
+`dev` 与 `preview` 都对局域网开放：同一网络下的手机可以用终端里 “Network:” 一行显示的地址访问。
+
+## 发布到 GitHub Pages
+
+仓库里已有自动发布脚本 `.github/workflows/deploy.yml`：每次推送到 `main`，GitHub 会自动自检、构建并发布，网址为 `https://用户名.github.io/仓库名/`（网址前缀由脚本按仓库名自动设置，本地开发不受影响）。第一次使用：
+
+1. 在 GitHub 新建一个 **公开** 仓库（免费账号的 Pages 只支持公开仓库），不要勾选添加 README 等初始文件；
+2. 在项目目录运行（把地址换成你的仓库地址）：
+
+```bash
+git remote add origin https://github.com/用户名/仓库名.git
+```
+
+```bash
+git push -u origin main
+```
+
+3. 打开仓库的 Settings → Pages，把 Source 设为 “GitHub Actions”；再到 Actions 页面重新运行一次“发布到 GitHub Pages”（或随便推送一次）。
+
+几分钟后即可在电脑和手机上打开。以后改完内容，提交并 `git push` 即会自动更新网站。
+
 ## 目录结构
 
 ```

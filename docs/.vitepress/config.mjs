@@ -76,6 +76,8 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '统计学互动讲义',
   description: '以茆诗松《概率论与数理统计教程》与黄良文《统计学》为纲的统计学互动讲义：直观、几何与严格表述，配互动实验与分层练习。',
+  // 网址前缀：本地是 /；部署到 GitHub Pages 时由发布脚本设为 /仓库名/
+  base: process.env.BASE || '/',
   cleanUrls: true,
   head: [
     // 在页面渲染前应用阅读层级与复习模式，避免刷新时闪烁
