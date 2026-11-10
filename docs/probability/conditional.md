@@ -315,7 +315,9 @@ $$P(\text{甲中}\mid\text{击中})=\frac{P(\text{甲中})}{P(\text{击中})}=\f
 **4.** 判断并说明理由：若 $P(A)>0$，$P(B)>0$，且 $P(A\mid B)>P(A)$，则 $P(B\mid A)>P(B)$。
 
 ::: details 解答
-正确。$P(A\mid B)>P(A)\iff P(AB)>P(A)P(B)\iff P(B\mid A)>P(B)$。“$B$ 的发生使 $A$ 更可能”是对称的关系，称 $A$ 与 $B$ **正相关**。
+正确。
+$$P(A\mid B)>P(A)\iff P(AB)>P(A)P(B)\iff P(B\mid A)>P(B).$$
+“$B$ 的发生使 $A$ 更可能”是对称的关系，称 $A$ 与 $B$ **正相关**。
 :::
 
 ### 提高

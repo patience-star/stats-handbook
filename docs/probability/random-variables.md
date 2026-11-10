@@ -227,7 +227,9 @@ $P(40<X<60)=P(|X-50|<10)\ge1-\frac{16}{100}=0.84$。如果长度服从正态分�
 **5.** 证明 $E(X-c)^2=\operatorname{Var}(X)+(E X-c)^2$，并说明它的几何含义。
 
 ::: details 解答
-记 $\mu=E(X)$。$E(X-c)^2=E[(X-\mu)+(\mu-c)]^2=E(X-\mu)^2+2(\mu-c)E(X-\mu)+(\mu-c)^2$，中间项因 $E(X-\mu)=0$ 而消失，得证。
+记 $\mu=E(X)$。
+$$E(X-c)^2=E[(X-\mu)+(\mu-c)]^2=E(X-\mu)^2+2(\mu-c)E(X-\mu)+(\mu-c)^2,$$
+中间项因 $E(X-\mu)=0$ 而消失，得证。
 
 几何上，它是力学中的平行轴定理，也是一种“勾股定理”：$X-c$ 分解为 $X-\mu$ 与常数 $\mu-c$ 两个“正交”部分，平方的期望等于两部分平方的期望之和。由此可知，用常数 $c$ 预测 $X$ 时，均方误差在 $c=\mu$ 时最小。
 :::
@@ -252,7 +254,9 @@ $\operatorname{Var}(X)=\frac{a^2+ab+b^2}3-\frac{(a+b)^2}4=\frac{(b-a)^2}{12}$。
 **8.** 设 $X\ge0$ 且期望存在。证明 $E(X)=\int_0^\infty[1-F(x)]\,\mathrm dx$（连续情形），并用它计算 $\mathrm{Exp}(\lambda)$ 的期望。
 
 ::: details 解答
-$\int_0^\infty[1-F(x)]\,\mathrm dx=\int_0^\infty\int_x^\infty p(t)\,\mathrm dt\,\mathrm dx=\int_0^\infty p(t)\Big(\int_0^t\mathrm dx\Big)\mathrm dt=\int_0^\infty tp(t)\,\mathrm dt=E(X)$，其中交换了积分次序。
+
+$$\int_0^\infty[1-F(x)]\,\mathrm dx=\int_0^\infty\int_x^\infty p(t)\,\mathrm dt\,\mathrm dx=\int_0^\infty p(t)\Big(\int_0^t\mathrm dx\Big)\mathrm dt=\int_0^\infty tp(t)\,\mathrm dt=E(X),$$
+其中交换了积分次序。
 
 几何上，$E(X)$ 等于分布函数曲线 **上方**、直线 $y=1$ **下方** 那块区域的面积。对指数分布，$1-F(x)=e^{-\lambda x}$，所以 $E(X)=\int_0^\infty e^{-\lambda x}\,\mathrm dx=1/\lambda$。离散的非负整数值随机变量有类似的公式 $E(X)=\sum_{k\ge1}P(X\ge k)$。
 :::

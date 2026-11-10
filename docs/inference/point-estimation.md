@@ -236,7 +236,9 @@ $\frac{\partial\ell}{\partial\sigma^2}=-\frac n{2\sigma^2}+\frac1{2\sigma^4}\sum
 **5.** 证明 $\operatorname{MSE}(\hat\theta)=\operatorname{Var}(\hat\theta)+[E(\hat\theta)-\theta]^2$。
 
 ::: details 解答
-记 $m=E(\hat\theta)$。$E(\hat\theta-\theta)^2=E[(\hat\theta-m)+(m-\theta)]^2=E(\hat\theta-m)^2+2(m-\theta)E(\hat\theta-m)+(m-\theta)^2$，中间项为 0，得证。
+记 $m=E(\hat\theta)$。
+$$E(\hat\theta-\theta)^2=E[(\hat\theta-m)+(m-\theta)]^2=E(\hat\theta-m)^2+2(m-\theta)E(\hat\theta-m)+(m-\theta)^2,$$
+中间项为 0，得证。
 :::
 
 **6.** 设 $X_1,\dots,X_n$ 来自 $N(\mu,\sigma^2)$。对 $\sigma^2$ 的估计量 $c\sum(X_i-\bar X)^2$，$c$ 取何值时均方误差最小？（提示：$\sum(X_i-\bar X)^2/\sigma^2\sim\chi^2(n-1)$。）

@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --host",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs",
+    "preview": "vitepress preview docs --host",
     "check": "node docs/.vitepress/theme/lib/check.mjs"
   },
   "devDependencies": {

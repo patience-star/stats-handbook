@@ -67,6 +67,10 @@
 .vp-doc h1 { letter-spacing: 0.02em; }
 .vp-doc strong { color: var(--vp-c-text-1); }
 .vp-doc mjx-container[display='true'] { overflow-x: auto; overflow-y: hidden; padding: 4px 0; scrollbar-width: thin; }
+/* 手机上比一行还宽的行内公式按比例缩小到一行宽，不把页面撑宽（电脑上不受影响） */
+.vp-doc mjx-container:not([display]) > svg { max-width: 100%; height: auto; }
+/* 公式里给读屏软件用的隐藏 MathML 也会占宽度，把它压成 1px，避免手机上出现横向滚动 */
+.vp-doc mjx-assistive-mml { width: 1px !important; height: 1px !important; overflow: hidden !important; }
 
 /* 小标签（标注框、标题角标、练习共用） */
 .chip {

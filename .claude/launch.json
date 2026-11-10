@@ -4,7 +4,7 @@
     {
       "name": "stats-site",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["node_modules/vitepress/bin/vitepress.js", "dev", "docs", "--port", "5173"],
+      "runtimeArgs": ["node_modules/vitepress/bin/vitepress.js", "dev", "docs", "--port", "5173", "--host"],
       "port": 5173
     }
   ]

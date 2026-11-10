@@ -142,7 +142,9 @@ $$E\big[E(Y\mid X)\big]=E(Y).$$
 
 **解** 给定 $N=n$ 时 $E(S\mid N=n)=50n$，所以 $E(S\mid N)=50N$，由重期望公式 $E(S)=50\,E(N)=5000$ 元。
 
-方差用下面的“全方差公式”：$\operatorname{Var}(S)=E[\operatorname{Var}(S\mid N)]+\operatorname{Var}[E(S\mid N)]=E(400N)+\operatorname{Var}(50N)=40000+2500\times100=290000$，标准差约 539 元。顾客人数的波动贡献了绝大部分的不确定性。
+方差用下面的“全方差公式”：
+$$\operatorname{Var}(S)=E[\operatorname{Var}(S\mid N)]+\operatorname{Var}[E(S\mid N)]=E(400N)+\operatorname{Var}(50N)=40000+2500\times100=290000,$$
+标准差约 539 元。顾客人数的波动贡献了绝大部分的不确定性。
 :::
 
 ::: quiz 0.6
@@ -238,7 +240,9 @@ $$E[Y-g(X)]^2=E[Y-m(X)]^2+2E\{[Y-m(X)][m(X)-g(X)]\}+E[m(X)-g(X)]^2.$$
 **9.** 证明全方差公式 $\operatorname{Var}(Y)=E[\operatorname{Var}(Y\mid X)]+\operatorname{Var}[E(Y\mid X)]$，并说明二维正态时两项各是什么。
 
 ::: details 解答
-$E[\operatorname{Var}(Y\mid X)]=E[E(Y^2\mid X)]-E\{[E(Y\mid X)]^2\}=E(Y^2)-E[m(X)^2]$；$\operatorname{Var}[m(X)]=E[m(X)^2]-[E(Y)]^2$。两式相加得 $E(Y^2)-[E(Y)]^2=\operatorname{Var}(Y)$。
+
+$$E[\operatorname{Var}(Y\mid X)]=E[E(Y^2\mid X)]-E\{[E(Y\mid X)]^2\}=E(Y^2)-E[m(X)^2];$$
+$\operatorname{Var}[m(X)]=E[m(X)^2]-[E(Y)]^2$。两式相加得 $E(Y^2)-[E(Y)]^2=\operatorname{Var}(Y)$。
 
 二维正态时，$m(X)=\mu_2+\rho\frac{\sigma_2}{\sigma_1}(X-\mu_1)$，$\operatorname{Var}[m(X)]=\rho^2\sigma_2^2$；$\operatorname{Var}(Y\mid X)=\sigma_2^2(1-\rho^2)$ 为常数。两项之和恰为 $\sigma_2^2$，$\rho^2$ 是 $Y$ 的方差中能被 $X$ 线性解释的比例。
 :::

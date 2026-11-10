@@ -269,7 +269,9 @@ $n\to\infty$ 时，第二个因子 $\to1$，第三个因子 $\to e^{-\lambda}$�
 **9.** 设 $X\sim\mathrm{Exp}(\lambda)$，$Y=\lceil X\rceil$（向上取整）。证明 $Y$ 服从几何分布，并求它的参数。这说明了指数分布与几何分布之间的什么关系？
 
 ::: details 解答
-对正整数 $k$，$P(Y=k)=P(k-1<X\le k)=e^{-\lambda(k-1)}-e^{-\lambda k}=(e^{-\lambda})^{k-1}(1-e^{-\lambda})$，所以 $Y\sim Ge(1-e^{-\lambda})$。
+对正整数 $k$，
+$$P(Y=k)=P(k-1<X\le k)=e^{-\lambda(k-1)}-e^{-\lambda k}=(e^{-\lambda})^{k-1}(1-e^{-\lambda}),$$
+所以 $Y\sim Ge(1-e^{-\lambda})$。
 
 指数分布“按整数时间点观察”就得到几何分布：几何分布是指数分布的离散版本，二者共享无记忆性。
 :::

@@ -176,7 +176,9 @@ $\hat y_2=0.4\times20+0.6\times20=20$，$\hat y_3=0.4\times22+0.6\times20=20.8$�
 **4.** 设 $y_t=a+bt$（$b>0$），用简单指数平滑预测。证明一步预测误差 $e_t=y_t-\hat y_t$ 满足 $e_{t+1}=(1-\alpha)e_t+b$，并求它的极限。这说明了什么？
 
 ::: details 解答
-$e_{t+1}=y_{t+1}-\hat y_{t+1}=(y_t+b)-\alpha y_t-(1-\alpha)\hat y_t=(1-\alpha)(y_t-\hat y_t)+b=(1-\alpha)e_t+b$。这是一个收缩映射，极限 $e^*$ 满足 $e^*=(1-\alpha)e^*+b$，即 $e^*=b/\alpha$。
+
+$$e_{t+1}=y_{t+1}-\hat y_{t+1}=(y_t+b)-\alpha y_t-(1-\alpha)\hat y_t=(1-\alpha)(y_t-\hat y_t)+b=(1-\alpha)e_t+b.$$
+这是一个收缩映射，极限 $e^*$ 满足 $e^*=(1-\alpha)e^*+b$，即 $e^*=b/\alpha$。
 
 预测值永远比实际值低 $b/\alpha$：$\alpha$ 越小（越平滑），落后得越多。要跟上趋势，必须单独估计斜率，这就是 Holt 法。
 :::

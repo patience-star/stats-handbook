@@ -220,7 +220,9 @@ $\bar x<M_e<M_o$，分布略向左偏：少数低分把平均数拉低了。
 **5.** 证明：(1) $\sum(x_i-\bar x)=0$；(2) $\sum(x_i-c)^2=\sum(x_i-\bar x)^2+n(\bar x-c)^2$，从而平方偏差之和在 $c=\bar x$ 时最小。
 
 ::: details 解答
-(1) $\sum(x_i-\bar x)=\sum x_i-n\bar x=0$。(2) $\sum(x_i-c)^2=\sum[(x_i-\bar x)+(\bar x-c)]^2=\sum(x_i-\bar x)^2+2(\bar x-c)\sum(x_i-\bar x)+n(\bar x-c)^2$，中间项由 (1) 为 0。这是“[随机变量及其数字特征](/probability/random-variables)”一章平行轴定理的样本版本。
+(1) $\sum(x_i-\bar x)=\sum x_i-n\bar x=0$。(2)
+$$\sum(x_i-c)^2=\sum[(x_i-\bar x)+(\bar x-c)]^2=\sum(x_i-\bar x)^2+2(\bar x-c)\sum(x_i-\bar x)+n(\bar x-c)^2,$$
+中间项由 (1) 为 0。这是“[随机变量及其数字特征](/probability/random-variables)”一章平行轴定理的样本版本。
 :::
 
 **6.** 证明：$\sum|x_i-c|$ 在 $c$ 取中位数时最小。
